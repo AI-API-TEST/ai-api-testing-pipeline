@@ -19,9 +19,9 @@ jobs:
             -t 1770829 \
             -e 5984070 \
             -r html  \
-            --report-file report.html
+            --report-file 
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
         with:
           name: apidog-report
-          path: report.html 
+          path: "*.html"
