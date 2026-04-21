@@ -1,0 +1,24 @@
+{
+  "name": "ai-api-testing-pipeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AI-API-TEST/ai-api-testing-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AI-API-TEST/ai-api-testing-pipeline/issues"
+  },
+  "homepage": "https://github.com/AI-API-TEST/ai-api-testing-pipeline#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
