@@ -1,6 +1,6 @@
-name: API Tests
+name: Automated API Tests
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   test:
@@ -9,7 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run API Tests
+      - name: Run Apidog Tests
         run: |
-          npx apidog-mcp-server@latest run openapi.json \
-            --api-key ${{ secrets.APIDOG_API_TOKEN }}
+          npx apidog-cli run \
+            --access-token ${{ secrets.APIDOG_ACCESS_TOKEN }} \
+            -t 1770829 \
+            -e 5984070 \
+            -n 1 \
+            -r html,cli
