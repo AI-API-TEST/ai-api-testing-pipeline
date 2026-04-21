@@ -11,5 +11,5 @@ jobs:
 
       - name: Run API Tests
         run: |
-          npx apidog-mcp-server@latest run apidog-tests.json \
+          npx apidog-mcp-server@latest run JSONPlaceholder API Testing.apidog.json \
           --api-key ${{ secrets.APIDOG_API_TOKEN }}
