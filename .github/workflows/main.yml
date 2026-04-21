@@ -1,6 +1,9 @@
 name: Automated API Tests
 
-on: [push, pull_request]
+on: [push]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   test:
@@ -14,6 +17,4 @@ jobs:
           npx apidog-cli run \
             --access-token ${{ secrets.APIDOG_ACCESS_TOKEN }} \
             -t 1770829 \
-            -e 5984070 \
-            -n 1 \
-            -r html,cli
+            -e 5984070
