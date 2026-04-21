@@ -17,4 +17,5 @@ jobs:
           npx apidog-cli run \
             --access-token ${{ secrets.APIDOG_ACCESS_TOKEN }} \
             -t 1770829 \
-            -e 5984070
+            -e 5984070 \
+            -r html
