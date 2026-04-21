@@ -18,9 +18,10 @@ jobs:
             --access-token ${{ secrets.APIDOG_ACCESS_TOKEN }} \
             -t 1770829 \
             -e 5984070 \
-            -r html
+            -r html  \
+            --report-file report.html
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
         with:
           name: apidog-report
-          path: report.html
+          path: report.html 
