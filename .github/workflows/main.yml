@@ -16,6 +16,5 @@ jobs:
         run: |
           npx apidog-cli run \
             --access-token ${{ secrets.APIDOG_ACCESS_TOKEN }} \
-              --project-id 1773459 \
-              --env-id 5984070 \
+            -t 1773459 -e 5984070
                -n 1 -r html,cli
