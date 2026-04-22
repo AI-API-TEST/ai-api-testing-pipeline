@@ -14,7 +14,6 @@ jobs:
 
       - name: Run Apidog Tests
         run: |
-          npx apidog-cli run \
+         npx apidog-cli run \
             --access-token ${{ secrets.APIDOG_ACCESS_TOKEN }} \
-            -t 1773459 -e 5984070
-               -n 1 -r html,cli
+           -t 1770829 -e 5984070 -n 1 -r html,cli
